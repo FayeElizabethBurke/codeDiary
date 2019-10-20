@@ -1,7 +1,9 @@
 let express = require("express"),
 	app = express(),
 	bodyParser = require("body-parser"),
-	mongoose = require("mongoose")
+	mongoose = require("mongoose"),
+	mongodb = require('mongodb');
+
 
 app.use(express.static(__dirname + '/public'));
 mongoose.connect('mongodb://localhost:27017/code_diary', {useNewUrlParser: true});
