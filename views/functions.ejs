@@ -1,0 +1,32 @@
+<!-- search function -->
+<% function searcher(searchWords, snippet.find({})){ %>
+<% let tileValues = []; %>
+<% let match = []; %>
+<% let positiveMatch = []; %>
+<% searchWords = searchWords.split(" "); %>
+<% for (let s=0; s<searchWords.length; s++){ %>
+<%     if (searchWords[s] === "a" || searchWords[s] === "with" ||searchWords[s] === "code"){ %>
+<%         searchWords.splice(s, 1); %>
+<%     } %>
+<% } %>
+
+<%     for (let t=0; t<allTiles.length; t++){ %>
+
+<%         tileValues.push(allTiles[t].title + " " + allTiles[t].language + " " + allTiles[t].framework + " " + allTiles[t].usage + " " + %> <% allTiles[t].comment) %>
+<%         tileValues = tileValues[0].split(" "); %>
+
+<%         for (let i=0; i<tileValues.length; i++){ %>
+<%             for (let j=0; j<searchWords.length; j++){ %>
+<%                 if (searchWords[j] === tileValues[i]){ %>
+<%                     match++; %>
+<%                 } %>
+<%             } %>
+<%         } %>
+<%         if (match > 0){ %>
+<%             positiveMatch.push(allTiles[t]._id) %>
+<%         } %>
+<%         match = 0; %>
+<%         tileValues = []; %>
+<%     } %>
+<%     let positive = positiveMatch; %>
+<% } %>

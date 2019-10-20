@@ -1,0 +1,77 @@
+<!-- move to new ejs -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+<div class="container">
+<form action="/snips" method="POST">
+	<div class="form-group">  
+    	<div class="form-group">
+        	<textarea class="form-control"  name="title" id="exampleFormControlTextarea1" rows="1" placeholder="Title"></textarea>
+    	</div>
+	
+    <div class="form-group">
+    	<select class="form-control" id="exampleFormControlSelect1" name="language">
+        	<option value="">Language</option>
+        	<option value="Javascript">JavaScript</option>
+        	<option value="CSS">CSS</option>
+        	<option value="HTML">HTML</option>
+        	<option value="C">C</option>
+        	<option value="Misc">Misc</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <select class="form-control" id="exampleFormControlSelect1" name="framework">
+            <option value="">Framework/ Preprocessor</option>
+            <option value="React">React</option>
+            <option value="PHP">PHP</option>
+            <option value="Node">Node.JS</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Misc">Misc</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <select class="form-control" id="exampleFormControlSelect1" name="usage">
+            <option value="">Usage</option>
+            <option value="Iterations">Iterations</option>
+            <option value="Loops">Loops</option>
+            <option value="Arrays">Array manipulation</option>
+            <option value="Trick">Trick</option>
+            <option value="Misc">Misc</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="code" placeholder="Paste Code Here"></textarea>
+    </div>
+	<div class="form-group">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" name="comment" placeholder="# comment"></textarea>
+    </div>
+    <button class="btn my-2 my-sm-0" type="submit">Submit Code Snip</button>
+	</div>
+</form>
+
+</div>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

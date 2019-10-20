@@ -1,0 +1,25 @@
+{
+  "name": "projectone",
+  "version": "1.0.0",
+  "description": "codeDiary",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FayeElizabethBurke/codeDiary.git"
+  },
+  "author": "Faye Burke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FayeElizabethBurke/codeDiary/issues"
+  },
+  "homepage": "https://github.com/FayeElizabethBurke/codeDiary#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.10"
+  }
+}

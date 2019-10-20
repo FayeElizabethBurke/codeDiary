@@ -1,0 +1,157 @@
+body {
+	background: #82A7AC;
+    font-family: 'Space Mono', monospace;
+}
+
+.card-title {
+	font-weight: bold;
+	color: #6E4F4F;
+	padding-top: 10px;
+}
+.card {
+	margin: 5px;
+	display: inline-block;
+	width: 552px;
+	background: linear-gradient(180deg, #FFFFFF 66.15%, rgba(255, 255, 255, 0) 76.56%), linear-gradient(180deg, rgba(196, 196, 196, 0.89) 					93.65%, rgba(196, 196, 196, 0) 101.77%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	font-family: 'Red Hat Display', sans-serif;
+
+}
+.scrolly {
+	background: #1E1D1D;
+	color: white;
+	width: 550px;
+	height: 220px;
+	overflow-y: scroll;
+	font-family: Space Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 27px;
+	align-items: center;
+}
+.card-lower {
+	display: inline;
+}
+.container {
+	text-align: center;
+}
+
+#headfoot {
+	background: linear-gradient(177.11deg, #82A7AC 45.15%, rgba(173, 197, 201, 0.656542) 111.98%, rgba(255, 255, 255, 0) 196.94%), #C4C4C4;	
+	margin-bottom: 0px;
+	height: 100px;
+}
+
+.navbar {
+    background-color: rgb(49,44,44);
+    color: white;
+    box-shadow: 0px 3px 150px rgba(0, 0, 0, 0.83);;
+}
+
+h1 {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.card-body {
+	padding: 0px;
+}
+
+#card-lower {
+	font-family: Red Hat Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	color: #000000;
+}
+
+.form-control {
+
+    height: 60px;
+	text-align: center;
+	background: radial-gradient(24.01px at 50% 50%, #ECFDFF 0%, #FFFFFF 100%);
+	opacity: 1;
+	border: 1px solid rgba(0, 0, 0, 0.63);
+	box-sizing: border-box;
+	border-radius: 7px;
+}
+
+
+.btn {
+    padding: 15px;
+    border-radius: 10px;
+    background: #C4C4C4;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    height: 60px;
+	margin-bottom:4px;
+}
+
+
+#title {
+    text-align: center;
+	margin-bottom: 20px;
+}
+
+.modal-dialog {
+	min-width: 900px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+	background: radial-gradient(55.13px at 50% 86.75%, #82A7AC 0%, #000000 100%), #000000;
+	opacity: 1;
+	box-shadow: 2px 3px 1.5px rgba(0, 0, 0, 0.25);
+	border-radius: 7px;
+}
+
+.fa-expand {
+	color: black;
+	margin: 10px;
+}
+
+.navButtons {
+	margin-bottom: 20px;
+}
+
+.alignment{
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+
+.snipcon {
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+.bd-example-modal-sm {
+	background: #82A7AC;
+}
+
+.fa{
+	margin: 0px;
+}
+
+.landing-background {
+	background: white;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: 70px;
+	padding-right: 70px;
+	margin-top: 15vh;	
+}

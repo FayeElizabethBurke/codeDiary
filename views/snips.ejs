@@ -1,0 +1,72 @@
+<% include partials/header %>
+<br>
+<div class="container">
+	<h1>Snips</h1>
+
+<div class="navButtons">
+<!-- Button trigger modal -->
+<button type="button" class="icon" data-toggle="modal" data-target="#addSnip"><i class="fa fa-plus"></i>
+</button>
+<!-- search modal -->
+<button type="button" class="icon" data-toggle="modal" data-target="#search"><i class="fa fa-search"></i>
+</button>
+<!-- logout	 -->
+<button type="button" class="icon" onclick="location.href='/'"><i class="fa fa-sign-out"></i>
+</button>
+
+<br>
+<!-- add snip Modal -->
+<div class="modal fade" id="addSnip" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Code Snip</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <% include addNew %>
+      </div>
+    </div>
+  </div>
+</div>
+	
+
+	
+<div class="modal fade bd-example-modal-sm" id="search" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <% include search %>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="wrapper">
+<div class=".specCont">
+<% snippet.forEach(function(snip){ %>
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title"><%= snip.title %></h4>
+		<div class="scrolly">
+			<p> code: <%= snip.code %> </p>
+		</div>
+
+
+		<span id="card-lower">
+			<p><a href="/snips/<%= snip._id %>" class="icon snipcon"><i class="fa fa-expand"></i></a>
+				<%= snip.language %>, <%= snip.framework %>, <%= snip.usage %>
+			</p>
+		</span>	  
+  </div>
+</div>
+<% }) %>
+
+
+<!-- copy code text function	 -->
+	
+
+<% include partials/footer %>
